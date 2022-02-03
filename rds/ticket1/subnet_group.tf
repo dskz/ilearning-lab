@@ -2,27 +2,27 @@ data "aws_availability_zones" "all" {}
 
 
 output "AZ" {
-	value = data.aws_availability_zones.all.names
+  value = data.aws_availability_zones.all.names
 }
 
 
 resource "aws_default_subnet" "default_az1" {
-	availability_zone = data.aws_availability_zones.all.names[0]
-	tags = {
-		Name = "Subnet1"
-	}
+  availability_zone = data.aws_availability_zones.all.names[0]
+  tags = {
+    Name = "Subnet1"
+  }
 }
 resource "aws_default_subnet" "default_az2" {
-	availability_zone = data.aws_availability_zones.all.names[1]
-	tags = {
-		Name = "Subnet2"
-	}
+  availability_zone = data.aws_availability_zones.all.names[1]
+  tags = {
+    Name = "Subnet2"
+  }
 }
 resource "aws_default_subnet" "default_az3" {
-	availability_zone = data.aws_availability_zones.all.names[2]
-	tags = {
-		Name = "Subnet3"
-	}
+  availability_zone = data.aws_availability_zones.all.names[2]
+  tags = {
+    Name = "Subnet3"
+  }
 }
 
 

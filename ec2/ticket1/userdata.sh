@@ -1,2 +1,2 @@
 #!/bin/bash
-# Your code goes here
+sudo apt-get install apache2 -y

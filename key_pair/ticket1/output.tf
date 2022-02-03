@@ -1,9 +1,9 @@
 output "key_name" {
-  value = aws_key_pair.ilearning-wordpress.key_name
+  value = aws_key_pair.ilearning.key_name
 }
 
 output "id" {
-  value = aws_key_pair.ilearning-wordpress.id
+  value = aws_key_pair.ilearning.id
 }
 
 output "region" {
